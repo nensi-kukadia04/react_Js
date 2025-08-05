@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #95a5a6;
+  --dark-gray: #34495e;
+  --white: #ffffff;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: var(--white);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.col-5 {
+  width: calc(41.65% - 10px);
+}
+
+.col-7 {
+  width: calc(58.31% - 10px);
+}
+
+.mb-3{
+  margin-bottom: 30px;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #ecf0f1;
+}
+
+
+
+.floating-actions {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.print-btn {
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.print-btn i {
+  font-size: 16px;
+}
+
+.print-btn {
+  background-color: var(--white);
+  color: var(--text-color);
+  border: 1px solid #e0e0e0;
+}
+
+.print-btn:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styles */
+.resume-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 30px 0;
+  position: relative;
+}
+
+.resume-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+.title h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title h2 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.contact-item {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.contact-item a:hover , .contactMe-item a:hover {
+  color: var(--secondary-color);
+}
+
+/* Main Styles */
+.resume-main {
+  padding: 30px 0;
+}
+
+.about-title h3, .education-title h3 ,.skill-title h3 ,.language-title h3 , .project-title ,.contact-title h3{
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-text {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Education Section */
+
+.education-item , .project-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed var(--light-gray);
+}
+
+.education-item:last-child , .project-item:last-child {
+  border-bottom: none;
+}
+
+.education-item h4 {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.institution {
+  font-style: italic;
+  color: var(--medium-gray);
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.education-period {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Skill Section */
+
+.skill-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-content li {
+  background-color: var(--light-gray);
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+/* Language Section */
+.language-content li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  position: relative;
+  padding-left: 20px;
+}
+
+.language-content li::before {
+  content: '•';
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Project Section */
+
+.project-item h4 {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.item-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.item-text span {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.project-item:nth-child(1) h4 { /* Blog News & Admin Panel */
+  color: #8074d8;
+}
+
+.project-item:nth-child(2) h4 { /* Book Store */
+  color: #27ae60;
+}
+
+.project-item:nth-child(3) h4 { /* School Management API */
+  color: #b6598c;
+}
+
+/* Contact Section */
+
+.contactMe-item {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.contactMe-item i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.contactMe-item a {
+  color: var(--dark-gray);
+  transition: color 0.3s;
+}
+
+.contactMe-item a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .title h1 {
+    font-size: 1.8rem;
+  }
+  
+  .title h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    margin: 10px auto;
+  }
+  
+  .resume-header {
+    padding: 20px 0;
+  }
+  
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-title, .skill-title h3, .language-title h3, 
+  .project-title, .contact-title h3 {
+    font-size: 1.1rem;
+  }
+}
