@@ -13,6 +13,9 @@ A simple and lightweight counter application built with React, JavaScript, HTML,
 ✅ Easy-to-understand code structure
 
 🖼️ Preview
+<img width="1918" height="1052" alt="image" src="https://github.com/user-attachments/assets/632cf7f3-8866-45a3-98c1-b812c5da3aaf" />
+
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/d79d87e3-2187-45b3-bffa-4e8492a18d89" />
 
 
 Note: Make sure your screenshot is uploaded to your repository (e.g., in a screenshots/ folder), and replace the URL above if the location is different.
