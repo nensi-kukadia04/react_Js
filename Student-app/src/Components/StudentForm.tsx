@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function StudentForm() {
   const [firstName, setfirstName] = useState<string>("");
@@ -8,8 +8,18 @@ export default function StudentForm() {
   const [gender, setGender] = useState<string>("");
   const [std, setStd] = useState<string>("");
   const [hobby, setHobby] = useState<string[]>([]);
-  const [allStudent, setAllStudents] = useState<studentObject[]>([]);
   const [error, setError] = useState<any>({});
+  const [allStudent, setAllStudents] = useState<studentObject[]>([]);
+
+  // get item into local storage 
+  // const [allStudent, setAllStudents] = useState<studentObject[]>(JSON.parse(localStorage.getItem('students') || "[]"));
+
+  useEffect(() => {
+    const data = localStorage.getItem('students');
+    if (data !== null) {
+      setAllStudents(JSON.parse(data));
+    }
+  }, [allStudent])
 
   const allStd: string[] = [
     "1st",
@@ -45,10 +55,10 @@ export default function StudentForm() {
     if (!lastName.trim()) newError.lastName = "Last Name is required"
 
     if (!email.trim()) newError.email = "Email is required"
-    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newError.email = "Invalid Email Format"
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newError.email = "Invalid Email Format"
 
     if (!phoneNo.trim()) newError.phoneNo = "phoneNo is required"
-    else if(!/^\d{10}$/.test(phoneNo)) newError.phoneNo = "Invalid PhoneNo Format"
+    else if (!/^(?:\+?91[-\s]?|0)?[6-9]\d{9}$/.test(phoneNo)) newError.phoneNo = "Invalid PhoneNo Format"
 
     if (!gender.trim()) newError.gender = "Gender is required"
 
@@ -79,7 +89,11 @@ export default function StudentForm() {
       };
 
       // student data store into the students array
-      setAllStudents([...allStudent, student]);
+
+      const data = [...allStudent, student];
+      setAllStudents(data);
+
+      localStorage.setItem('students', JSON.stringify(data));
 
       // clean input
       setfirstName("");
@@ -319,34 +333,19 @@ export default function StudentForm() {
 
 
         {/* display data  */}
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg ms-3 max-h-96 overflow-y-auto">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
-              <tr>
-                <th scope="col" className="px-6 py-3">
-                  First Name
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Last Name
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Email
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Phone NO
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Gender
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Std
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Hobby
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Action
-                </th>
+        <div className="relative overflow-x-auto rounded-lg shadow-2xl">
+          <table className="w-full text-sm text-left text-gray-700">
+            <thead className="text-xs uppercase bg-gray-50 text-gray-600 dark:bg-gray-700 dark:text-gray-400">
+              <tr className="bg-white dark:bg-gray-800 dark:border-gray-300 border-gray-200">
+                <th className="px-6 py-3">#</th>
+                <th className="px-6 py-3">First Name</th>
+                <th className="px-6 py-3">Last Name</th>
+                <th className="px-6 py-3">Email</th>
+                <th className="px-6 py-3">Phone NO</th>
+                <th className="px-6 py-3">Gender</th>
+                <th className="px-6 py-3">Std</th>
+                <th className="px-6 py-3">Hobby</th>
+                <th className="px-6 py-3">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -354,24 +353,29 @@ export default function StudentForm() {
                 allStudent.map((student, index) => (
                   <tr
                     key={index}
-                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    className="bg-white hover:bg-gray-50 border-b border-gray-400"
                   >
-                    <td className="px-6 py-4">{student.firstName}</td>
+                    <td className="px-6 py-4">{++index}</td>
+                    <td className="px-6 py-4 ">{student.firstName}</td>
                     <td className="px-6 py-4">{student.lastName}</td>
                     <td className="px-6 py-4">{student.email}</td>
                     <td className="px-6 py-4">{student.phoneNo}</td>
                     <td className="px-6 py-4">{student.gender}</td>
                     <td className="px-6 py-4">{student.std}</td>
                     <td className="px-6 py-4">{student.hobby.join(", ")}</td>
-                    <td className="px-6 py-4">
-                      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">✎</button>
-                      <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">❌</button>
+                    <td className="px-6 py-4 flex gap-2">
+                      <button className="p-2 rounded-lg bg-green-200 text-green-700 hover:bg-green-300">
+                        📝
+                      </button>
+                      <button className="p-2 rounded-lg bg-red-200 text-red-700 hover:bg-red-300">
+                        🗑️
+                      </button>
                     </td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan={8} className="px-6 py-4 text-center">
+                  <td colSpan={8} className="px-6 py-6 text-center text-gray-500">
                     No students added yet
                   </td>
                 </tr>
