@@ -3,9 +3,12 @@
 
 A **React + TypeScript** based student management application with a clean, responsive interface that allows users to **add, view, and manage student records** with ease.  
 
-![Preview]((image.png))  
-![Preview]((image-1.png))  
-![Preview]((image-2.png))  
+<img width="1862" height="814" alt="image" src="https://github.com/user-attachments/assets/bbfe0ca1-2a39-456e-8740-c8d63213f6f4" />
+
+<img width="1532" height="671" alt="image" src="https://github.com/user-attachments/assets/70668208-d77c-4f7d-8d82-b90bf3c681a5" />
+
+<img width="1893" height="868" alt="image" src="https://github.com/user-attachments/assets/e3aeabd2-e03a-4217-a162-ff8eede02c98" />
+ 
 
 ---
 
