@@ -3,8 +3,9 @@
 
 A **React + TypeScript** based student management application with a clean, responsive interface that allows users to **add, view, and manage student records** with ease.  
 
-![Preview](Screenshot%202025-08-25%20182339.png)  
-![Preview](Screenshot%202025-08-25%20182418.png)  
+![Preview]((image.png))  
+![Preview]((image-1.png))  
+![Preview]((image-2.png))  
 
 ---
 
