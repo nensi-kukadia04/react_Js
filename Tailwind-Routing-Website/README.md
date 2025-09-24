@@ -78,8 +78,8 @@ base/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/base-react-website.git
-   cd base-react-website
+   git clone https://github.com/nensi-kukadia04/Tailwind-Routing-Website.git
+   cd Tailwind-Routing-Website
    ```
 
 2. **Install dependencies**
