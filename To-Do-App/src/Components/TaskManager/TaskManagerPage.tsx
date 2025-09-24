@@ -291,7 +291,7 @@ function TaskManagerPage({ theme, setTheme }: Props) {
                                 style={{ backgroundColor: color }}
                                 onClick={() => setTheme(color)}
                                 className={`w-8 h-8 rounded-full border-2 transition ${theme === color ? "border-gray-900" : "border-white"
-                                    }`}
+                                }`}
                             />
                         ))}
                     </div>
