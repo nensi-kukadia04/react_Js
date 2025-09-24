@@ -1,69 +1,119 @@
-# React + TypeScript + Vite
+# 📝 Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Task Manager Application** built with **React + TypeScript + TailwindCSS**.  
+It helps you manage tasks with **priorities, statuses, theme customization, and persistence** using **LocalStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ **Add, Edit, Delete tasks**
+- 🔄 **Update task status** (Pending ↔ Completed)
+- 🎯 **Set priority levels** (Extreme, Moderate, Low)
+- 🎨 **Change theme color dynamically** (saved in LocalStorage)
+- 📅 **Live date and time display** in Navbar
+- 📂 **Sidebar navigation** with profile section
+- 📢 **Toast notifications** for task actions
+- 💾 **Persistent storage** (tasks & theme stored in LocalStorage)
+- 📱 **Responsive design** with TailwindCSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Screenshots
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Dashboard
+![Dashboard Preview]public/todo-1.png
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Task Management
+![Task Manager Preview](https://via.placeholder.com/900x500.png?text=Add+%2F+Edit+Tasks)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TypeScript, TailwindCSS
+- **Icons:** Lucide React
+- **Notifications:** React Toastify
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Storage:** LocalStorage (for tasks & theme persistence)
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│── App.tsx
+│── Components/
+│   │── Header/
+│   │   └── TodoNavbar.tsx
+│   │── SideBar/
+│   │   └── TodoSidebar.tsx
+│   │── TaskManager/
+│   │   └── TaskManagerPage.tsx
+│   │── Footer/
+│   │   └── TodoFooter.tsx
+│── index.css
+│── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚡ Installation & Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/nensi-kukadiya04/TO-DO-APP.git
+   cd task-manager
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the app**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🎨 Theme Customization
+
+- A floating **color picker button** 🎨 allows you to choose from multiple theme colors.
+- Selected theme persists across refresh (stored in **LocalStorage**).
+
+---
+
+## 📌 Roadmap
+
+- [ ] Add authentication system
+- [ ] Drag & drop task reordering
+- [ ] Task categories & filters
+- [ ] Dark mode support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Fork the repository and create a pull request with improvements.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use and modify for your own projects.
+
+---
+
+### 👩‍💻 Author
+**Nensi Kukadia**  
+📧 [kukadiyanensi04@gmail.com](mailto:kukadiyanensi04@gmail.com)

@@ -1,4 +1,4 @@
-export default function HomeCarousel() {
+export default function HomePage() {
   return (
     <div className="relative w-full max-w-[1600px] mx-auto overflow-hidden rounded-lg shadow-md">
       {/* One Slide (Static Example) */}

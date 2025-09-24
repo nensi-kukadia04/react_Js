@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 export default function Navbar() {
+
+     const [isMoreOpen, setIsMoreOpen] = useState(false);
+
     return (
         <div className="w-full">
             {/* Top Banner */}
@@ -59,23 +64,61 @@ export default function Navbar() {
                         {/* Right Section */}
                         <div className="flex items-center space-x-4">
                             {/* Login Button */}
-                            <button className="group relative bg-white/10 backdrop-blur-sm text-white font-semibold hover:bg-white/20 px-6 py-2.5 rounded-lg transition-all duration-300 border border-white/20 hover:border-white/30">
-                                <div className="flex items-center">
-                                    <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                    </svg>
-                                    Login
-                                </div>
+                            <button className="text-white hover:bg-white/20 p-2 rounded-full">
+                                <svg
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                    />
+                                </svg>
                             </button>
 
-                            {/* More Menu */}
-                            <div className="relative group">
-                                <button className="flex items-center text-white font-semibold hover:bg-white/10 px-4 py-2.5 rounded-lg transition-all duration-200 border border-transparent hover:border-white/20">
+                            {/* More Dropdown */}
+                            <div className="relative">
+                                <button
+                                    onClick={() => setIsMoreOpen(!isMoreOpen)}
+                                    className="flex items-center text-white shadow-xl font-semibold hover:bg-white/10 px-4 py-2 rounded-lg transition-all duration-200"
+                                >
                                     More
-                                    <svg className="w-4 h-4 ml-2 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7"></path>
+                                    <svg
+                                        className={`w-4 h-4 ml-2 transform transition-transform ${isMoreOpen ? "rotate-180" : "rotate-0"
+                                            }`}
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2.5"
+                                            d="M19 9l-7 7-7-7"
+                                        />
                                     </svg>
                                 </button>
+
+                                {isMoreOpen && (
+                                    <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 z-50">
+                                        <a
+                                            href="/add-product"
+                                            className="block px-4 py-2 text-gray-700 hover:bg-blue-50"
+                                        >
+                                            ➕ Add Product
+                                        </a>
+                                        <a
+                                            href="/view-product"
+                                            className="block px-4 py-2 text-gray-700 hover:bg-blue-50"
+                                        >
+                                            📦 View Product
+                                        </a>
+                                    </div>
+                                )}
                             </div>
 
                             {/* Cart */}

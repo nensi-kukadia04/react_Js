@@ -1,26 +1,29 @@
+import { PencilLineIcon, Trash2Icon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
-function TaskManagerPage() {
-    type priority = "Extreme" | "Moderate" | "Low";
+type priority = "Extreme" | "Moderate" | "Low";
 
-    type ToDo = {
-        addTask: string;
-        status: "pending" | "completed";
-        priority: priority;
-    };
+type ToDo = {
+    addTask: string;
+    status: "pending" | "completed";
+    priority: priority;
+};
+
+type Props = {
+    theme: string;
+    setTheme: (color: string) => void;
+};
+
+function TaskManagerPage({ theme, setTheme }: Props) {
 
     const [addTask, setAddTask] = useState<string>("");
-    const [displayTask, setDisplayTask] = useState<ToDo[]>(JSON.parse(localStorage.getItem("tasks") || "[]"));
+    const [displayTask, setDisplayTask] = useState<ToDo[]>(
+        JSON.parse(localStorage.getItem("tasks") || "[]")
+    );
     const [priority, setPriority] = useState<priority>("Moderate");
-    const [editId, setEditId] = useState< number>();
-
-    // useEffect(() => {
-    //     const data = localStorage.getItem("Tasks");
-    //     if (data !== null) {
-    //         setDisplayTask(JSON.parse(data));
-    //     }
-    //     console.log(data)
-    // }, []);
+    const [editId, setEditId] = useState<number>();
+    const [openPicker, setOpenPicker] = useState(false);
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(displayTask));
@@ -52,10 +55,12 @@ function TaskManagerPage() {
         if (editId === undefined) {
             const addNewTasks = [...displayTask, newTask];
             setDisplayTask(addNewTasks);
-            // console.log(addNewTasks);
-        }
-        else {
-            const data = displayTask.map((task, index) => (editId === index) ? newTask : task)
+            toast.success("Task added successfully!");
+        } else {
+            const data = displayTask.map((task, index) =>
+                editId === index ? newTask : task
+            );
+            toast.warn("Task updated successfully!");
             setDisplayTask(data);
         }
 
@@ -67,11 +72,11 @@ function TaskManagerPage() {
     const deleteTasks = (i: number) => {
         const data = displayTask.filter((_, index) => i !== index);
         setDisplayTask(data);
+        toast.error("Task deleted successfully!");
     };
 
     const editTask = (i: number) => {
         setEditId(i);
-
         setAddTask(displayTask[i].addTask);
         setPriority(displayTask[i].priority);
     };
@@ -81,7 +86,7 @@ function TaskManagerPage() {
             {/* Add / Update Task */}
             <div className="bg-white rounded-xl shadow-md p-6 mb-8">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                    ➕ {editId === undefined ? "Add New Task" : "Update Task"}
+                    {editId === undefined ? "➕ Add New Task" : " 🔃 Update Task"}
                 </h2>
                 <form onSubmit={submitTask}>
                     <div className="flex flex-col sm:flex-row gap-4 w-full">
@@ -90,14 +95,14 @@ function TaskManagerPage() {
                             placeholder="Write your task here..."
                             value={addTask}
                             onChange={(e) => setAddTask(e.target.value)}
-                            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm bg-gray-50"
+                            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-sm bg-gray-50"
                         />
 
                         <div className="w-full sm:w-48">
                             <select
                                 value={priority}
                                 onChange={(e) => setPriority(e.target.value as priority)}
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm bg-gray-50"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none text-sm bg-gray-50"
                             >
                                 {priorities.map((data, index) => (
                                     <option key={index} value={data}>
@@ -108,8 +113,8 @@ function TaskManagerPage() {
                         </div>
                         <button
                             type="submit"
-                            className={`${editId === undefined ? "bg-purple-600 hover:bg-purple-700" : "bg-yellow-500 hover:bg-yellow-600"
-                                } text-white px-6 py-2 rounded-md transition-colors text-sm font-medium`}
+                            style={{ backgroundColor: theme }}
+                            className="text-white px-6 py-2 rounded-md transition-colors text-sm font-medium"
                         >
                             {editId === undefined ? "Add Task" : "Update Task"}
                         </button>
@@ -121,7 +126,7 @@ function TaskManagerPage() {
                 {/* Pending Tasks */}
                 <div className="bg-white rounded-xl shadow-md p-6">
                     <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                        🕗 Pending Tasks
+                        🕗 Pending Tasks ({pendingTasks.length})
                     </h3>
                     {pendingTasks.length === 0 ? (
                         <p className="text-sm text-gray-500 italic">
@@ -130,7 +135,7 @@ function TaskManagerPage() {
                     ) : (
                         <div className="overflow-x-auto">
                             <table className="w-full table-auto border border-collapse border-gray-300 rounded-lg">
-                                <thead className="bg-purple-100 text-gray-700 text-sm">
+                                <thead className="bg-gray-100 text-gray-700 text-sm">
                                     <tr>
                                         <th className="px-4 py-2 text-left border-b border-gray-300">
                                             Mark
@@ -156,9 +161,9 @@ function TaskManagerPage() {
                                                 <td className="px-4 py-2 border-b border-gray-200">
                                                     <input
                                                         type="checkbox"
-                                                        className="rounded-full"
-                                                        onChange={() => changeStatus(displayTask.indexOf(tasks))}
+                                                        className="w-5 h-5 rounded-full border-2 border-gray-400 bg-white checked:bg-green-500 checked:border-green-500 transition-all duration-200 cursor-pointer"
                                                         checked={false}
+                                                        onChange={() => changeStatus(displayTask.indexOf(tasks))}
                                                     />
                                                 </td>
                                                 <td className="px-4 py-2 border-b border-gray-200">
@@ -181,17 +186,21 @@ function TaskManagerPage() {
                                                     <div className="flex justify-center gap-2">
                                                         {/* Edit */}
                                                         <button
-                                                            onClick={() => editTask(displayTask.indexOf(tasks))}
-                                                            className="flex items-center justify-center w-6 h-6 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full transition-colors"
+                                                            onClick={() =>
+                                                                editTask(displayTask.indexOf(tasks))
+                                                            }
+                                                            className="flex items-center justify-center w-6 h-6 text-white rounded-full gap-2 bg-orange-300 hover:bg-orange-400 transition-colors"
                                                         >
-                                                            ✏️
+                                                            <PencilLineIcon size={16} />
                                                         </button>
                                                         {/* Delete */}
                                                         <button
-                                                            onClick={() => deleteTasks(displayTask.indexOf(tasks))}
+                                                            onClick={() =>
+                                                                deleteTasks(displayTask.indexOf(tasks))
+                                                            }
                                                             className="flex items-center justify-center w-6 h-6 bg-red-500 hover:bg-red-600 text-white rounded-full transition-colors"
                                                         >
-                                                            ❌
+                                                            <Trash2Icon size={16} />
                                                         </button>
                                                     </div>
                                                 </td>
@@ -207,7 +216,7 @@ function TaskManagerPage() {
                 {/* Completed Tasks */}
                 <div className="bg-white rounded-xl shadow-md p-6">
                     <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                        ✅ Completed Tasks
+                        ✅ Completed Tasks ({completedTasks.length})
                     </h3>
                     {completedTasks.length === 0 ? (
                         <p className="text-sm text-gray-500 italic">
@@ -216,7 +225,7 @@ function TaskManagerPage() {
                     ) : (
                         <div className="overflow-x-auto">
                             <table className="w-full table-auto border border-collapse border-gray-200 rounded-lg">
-                                <thead className="bg-purple-100 text-gray-700 text-sm">
+                                <thead className="bg-gray-100 text-gray-700 text-sm">
                                     <tr>
                                         <th className="px-4 py-2 text-left border-b border-gray-300">
                                             Unmark
@@ -232,14 +241,12 @@ function TaskManagerPage() {
                                 <tbody>
                                     {completedTasks.map((tasks, index) => {
                                         return (
-                                            <tr
-                                                key={index}
-                                                className="hover:bg-gray-50 transition"
-                                            >
-                                                <td className="px-4 py-2 border-b border-gray-200">
+                                            
+                                            <tr key={index} className="hover:bg-gray-50 transition">
+                                                <td className="px-4 py-2  border-b border-gray-200">
                                                     <input
                                                         type="checkbox"
-                                                        className="rounded-full"
+                                                        className="w-5 h-5 rounded-full "
                                                         checked
                                                         onChange={() => changeStatus(displayTask.indexOf(tasks))}
                                                     />
@@ -249,10 +256,12 @@ function TaskManagerPage() {
                                                 </td>
                                                 <td className="px-4 py-2 gap-2 flex justify-center border-b border-gray-200">
                                                     <button
-                                                        onClick={() => deleteTasks(displayTask.indexOf(tasks))}
+                                                        onClick={() =>
+                                                            deleteTasks(displayTask.indexOf(tasks))
+                                                        }
                                                         className="flex items-center justify-center w-6 h-6 bg-red-500 hover:bg-red-600 text-white rounded-full transition-colors"
                                                     >
-                                                        ❌
+                                                        <Trash2Icon size={16} />
                                                     </button>
                                                 </td>
                                             </tr>
@@ -264,6 +273,42 @@ function TaskManagerPage() {
                     )}
                 </div>
             </div>
+
+            {/* Theme Color Picker Button */}
+            <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+                {/* color picker */}
+                {openPicker && (
+                    <div className="grid grid-cols-4 gap-2 mb-2 bg-white p-3 rounded-lg shadow-md">
+                        {[
+                            "#6B3F69", "#006A67", "#000B58",
+                            "#DC143C", "#4F200D", "#715A5A",
+                            "#AD7BCD", "#511D43", "#6b7280",
+                            "#3C467B", "#18230F", "#1E3E62",
+                            "#820eef", "#2563eb", "#16a34a",
+                            "#000000",
+                        ].map((color, index) => (
+                            <button
+                                key={index}
+                                style={{ backgroundColor: color }}
+                                onClick={() => setTheme(color)}
+                                className={`w-8 h-8 rounded-full border-2 transition ${theme === color ? "border-gray-900" : "border-white"
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                )}
+
+                <button
+                    onClick={() => setOpenPicker(!openPicker)}
+                    style={{ backgroundColor: theme }}
+                    className="w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-white text-xl"
+                >
+                    🎨
+                </button>
+            </div>
+
+            <ToastContainer autoClose={3000}/>
+
         </div>
     );
 }
