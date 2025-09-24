@@ -11,7 +11,7 @@ function TodoSidebar({ theme }: Props) {
       {/* Profile */}
       <div
         className="flex flex-col items-center text-center py-8 border-b"
-        style={{ borderColor: theme + "66" }} // lighter border using opacity
+        style={{ borderColor: theme }} 
       >
         <img
           src="https://t4.ftcdn.net/jpg/06/43/68/65/360_F_643686558_Efl6HB1ITw98bx1PdAd1wy56QpUTMh47.png"
@@ -24,31 +24,54 @@ function TodoSidebar({ theme }: Props) {
 
       {/* Menu */}
       <nav className="flex-1 mt-6 space-y-1">
-        {[
-          { icon: "📊", label: "Dashboard" },
-          { icon: "❗", label: "Vital Task" },
-          { icon: "✅", label: "My Task", active: true },
-          { icon: "📂", label: "Task Categories" },
-          { icon: "⚙️", label: "Settings" },
-          { icon: "❓", label: "Help" },
-        ].map(({ icon, label, active }) => (
-          <a
-            key={label}
-            href="#"
-            className={`flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 ${
-              active
-                ? "bg-white text-gray-900 shadow-sm"
-                : "hover:bg-white/10"
-            }`}
-            style={
-              active
-                ? { borderLeft: `4px solid ${theme}`, color: theme }
-                : {}
-            }
-          >
-            <span className="text-lg">{icon}</span> {label}
-          </a>
-        ))}
+        {/* Dashboard */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 hover:bg-white/10"
+        >
+          <span className="text-lg">📊</span> Dashboard
+        </a>
+
+        {/* Vital Task */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 hover:bg-white/10"
+        >
+          <span className="text-lg">❗</span> Vital Task
+        </a>
+
+        {/* My Task (active) */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 bg-white text-gray-900 shadow-sm"
+          style={{ borderLeft: `4px solid ${theme}`, color: theme }}
+        >
+          <span className="text-lg">✅</span> My Task
+        </a>
+
+        {/* Task Categories */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 hover:bg-white/10"
+        >
+          <span className="text-lg">📂</span> Task Categories
+        </a>
+
+        {/* Settings */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 hover:bg-white/10"
+        >
+          <span className="text-lg">⚙️</span> Settings
+        </a>
+
+        {/* Help */}
+        <a
+          href="#"
+          className="flex items-center gap-3 px-6 py-3 rounded-r-full transition-all duration-200 hover:bg-white/10"
+        >
+          <span className="text-lg">❓</span> Help
+        </a>
       </nav>
 
       {/* Logout */}

@@ -7,7 +7,6 @@ type Props = {
 function TodoNavbar({ theme }: Props) {
   const [dateTime, setDateTime] = useState(new Date());
 
-
   return (
     <header className="w-full bg-white shadow-sm px-6 py-4 flex items-center justify-between sticky top-0 z-20">
       {/* Logo */}

@@ -5,9 +5,7 @@ import TaskManagerPage from "./Components/TaskManager/TaskManagerPage";
 import TodoFooter from "./Components/Footer/TodoFooter";
 
 function App() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "#820eef" 
-  );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "#820eef" );
 
   useEffect(() => {
     localStorage.setItem("theme", theme);

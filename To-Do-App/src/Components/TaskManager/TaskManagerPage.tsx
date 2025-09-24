@@ -16,7 +16,6 @@ type Props = {
 };
 
 function TaskManagerPage({ theme, setTheme }: Props) {
-
     const [addTask, setAddTask] = useState<string>("");
     const [displayTask, setDisplayTask] = useState<ToDo[]>(
         JSON.parse(localStorage.getItem("tasks") || "[]")
