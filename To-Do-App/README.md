@@ -22,11 +22,16 @@ It helps you manage tasks with **priorities, statuses, theme customization, and 
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard Preview]public/todo-1.png
+![alt text](public/todo-1.png)
 
 ### Task Management
-![Task Manager Preview](https://via.placeholder.com/900x500.png?text=Add+%2F+Edit+Tasks)
+![alt text](public/todo-2.png)
 
+### Theme Changer
+![alt text](public/todo-3.png)
+
+### Added Task
+![alt text](public/todo-4.png)
 ---
 
 ## 🛠️ Tech Stack
