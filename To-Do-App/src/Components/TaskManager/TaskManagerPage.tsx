@@ -273,9 +273,8 @@ function TaskManagerPage({ theme, setTheme }: Props) {
                 </div>
             </div>
 
-            {/* Theme Color Picker Button */}
+            {/* Theme Color  */}
             <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
-                {/* color picker */}
                 {openPicker && (
                     <div className="grid grid-cols-4 gap-2 mb-2 bg-white p-3 rounded-lg shadow-md">
                         {[
