@@ -155,7 +155,7 @@ npm start
 - **Add product Page**: ![AdminView](public/addProduct.png)
 - **Order Placed Page**: ![orderPlaced](public/orderPlaced.png)
 - **delete Page**: ![AdminView](public/deleteProduct.png)
-- **Contact Page**: ![Contactpage](public/ContactPage.png)
+- **Contact Page**: ![Contactpage](public/contactPage.png)
 
 ---
 
