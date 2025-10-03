@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# GoCart - E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GoCart is a modern e-commerce web application built with **React**, **Tailwind CSS**, and **React Router**. Users can browse products, filter, search, sort, add to cart, and place orders seamlessly.
 
-Currently, two official plugins are available:
+<div>
+  <div>
+    ![GoCart Logo](public/home.png)
+    ![GoCart Logo](public/addProduct.png)
+  </div>
+  <div>
+    ![GoCart Logo](public/deleteProduct.png)
+    ![GoCart Logo](public/detailPage.png)
+  </div>
+  <div>
+    ![GoCart Logo](public/order.png)
+    ![GoCart Logo](public/orderPlaced.png)
+  </div>
+  <div>
+    ![GoCart Logo](public/sorting.png)
+    ![GoCart Logo](public/filter.png)
+  </div>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛒 Product Management (CRUD)
+- **Create**: Admin can add products with name, price, category, stock, image, rating, reviews, warranty, and description.
+- **Read**: Users can view all products in a grid layout.
+- **Update**: Admin can edit existing products.
+- **Delete**: Admin can remove products.
 
-## Expanding the ESLint configuration
+### 📄 Product Details Page
+- View full product details: image, description, features, stock, price, and discount.
+- Accessible via **View Details** button.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛍️ Shopping Cart
+- Add products to cart.
+- Adjust product quantity.
+- Remove items.
+- View total price.
+- Place orders with confirmation.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔍 Search, Filter & Sort
+- **Search**: By name, category, or ID.
+- **Filter**: By category or price range.
+- **Sort**: Alphabetically (A-Z, Z-A).
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📱 Responsive UI
+- Sidebar for categories.
+- Product grid adjusts based on screen size.
+- Carousel for featured promotions.
+- Clean, modern styling with Tailwind CSS.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🔔 Notifications
+- Toast notifications for actions like adding to cart, order confirmation, or errors.
+
+---
+
+## 🛠 Tech Stack
+- **Frontend**: React, React Router, Tailwind CSS
+- **State Management**: useState, useEffect
+- **API Services**: CRUD operations with productAPIServices
+- **Notifications**: react-toastify
+- **Icons**: Lucide React
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├─ components/
+│  ├─ Navbar.tsx
+│  ├─ ProductCard.tsx
+│  └─ ...
+├─ pages/
+│  ├─ HomePage.tsx
+│  ├─ ViewProductDetail.tsx
+│  ├─ AddProductForm.tsx
+│  └─ AddToCartPage.tsx
+├─ Service/
+│  └─ ProductAPIService.ts
+└─ App.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Install dependencies**
+```bash
+npm install
 ```
+
+2. **Run the application**
+```bash
+npm start
+```
+
+3. **Navigate the app**
+- Browse products on **Home Page**
+- Search, filter, and sort products
+- Click **View Details** for more info
+- Add products to **Cart**
+- Place orders from the **Cart page**
+- Admin can manage products via CRUD operations
+
+---
+
+## ⚡ Future Improvements
+- User authentication and roles (Admin/User)
+- Integrate with backend API for persistent storage
+- Add payment gateway for checkout
+- Product recommendation and personalized suggestions
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## Author By 
+ ~ Nensi Kukadia

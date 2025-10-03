@@ -58,25 +58,6 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* Search Bar */}
-                        <div className="flex-1 max-w-2xl mx-8">
-                            <div className="relative group">
-                                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-                                <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
-                                    <input
-                                        type="text"
-                                        placeholder="Search for products, brands and more"
-                                        className="w-full h-12 px-4 pr-14 text-sm text-gray-700 bg-white border-0 focus:outline-none focus:ring-2 focus:ring-blue-300 placeholder-gray-500"
-                                    />
-                                    <button className="absolute right-0 top-0 h-12 px-4 bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 transition-all duration-200 flex items-center justify-center group">
-                                        <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Right Section */}
                         <div className="flex items-center space-x-4">
                             {/* Login Button */}
