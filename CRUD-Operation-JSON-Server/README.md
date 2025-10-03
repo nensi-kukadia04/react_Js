@@ -147,7 +147,7 @@ npm start
 ## 🖼 Screenshots
 
 - **Home Page**: ![HomePage](public/homePage.png)
-- **Home Page**: ![HomePage](public/homePage2.png)
+- **Home Page**: ![HomePage](public/homePage-2.png)
 - **Product Details**: ![ProductDetails](public/detailPage.png)
 - **View Admin Product**: ![AdminView](public/viewProduct.png)
 - **Cart Page**: ![CartPage](public/addTocart.png)
