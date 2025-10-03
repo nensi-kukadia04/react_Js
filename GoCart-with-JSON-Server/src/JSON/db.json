@@ -1,0 +1,1917 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Adidas Sports",
+      "price": "43900",
+      "image": "https://picsum.photos/seed/product1/400/400",
+      "category": "Fashion",
+      "stock": 31,
+      "brand": "Adidas",
+      "rating": 4.6,
+      "reviews": 1739,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "2",
+      "name": "Samsung Home & Kitchen",
+      "price": 12006,
+      "image": "https://picsum.photos/seed/product2/400/400",
+      "category": "Home & Kitchen",
+      "stock": 13,
+      "brand": "Samsung",
+      "rating": 3.8,
+      "reviews": 3433,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "3",
+      "name": "HP Sports",
+      "price": 80408,
+      "image": "https://picsum.photos/seed/product3/400/400",
+      "category": "Sports",
+      "stock": 78,
+      "brand": "HP",
+      "rating": 3.7,
+      "reviews": 2257,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "4",
+      "name": "Puma Books",
+      "price": 9214,
+      "image": "https://picsum.photos/seed/product4/400/400",
+      "category": "Books",
+      "stock": 26,
+      "brand": "Puma",
+      "rating": 3.5,
+      "reviews": 1086,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "5",
+      "name": "Sony Electronics",
+      "price": 31238,
+      "image": "https://picsum.photos/seed/product5/400/400",
+      "category": "Electronics",
+      "stock": 51,
+      "brand": "Sony",
+      "rating": 4,
+      "reviews": 106,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "6",
+      "name": "Dell Sports",
+      "price": 26607,
+      "image": "https://picsum.photos/seed/product6/400/400",
+      "category": "Sports",
+      "stock": 10,
+      "brand": "Dell",
+      "rating": 4.5,
+      "reviews": 3606,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "7",
+      "name": "Sony Fashion",
+      "price": 37496,
+      "image": "https://picsum.photos/seed/product7/400/400",
+      "category": "Fashion",
+      "stock": 36,
+      "brand": "Sony",
+      "rating": 3,
+      "reviews": 2497,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "8",
+      "name": "Puma Home & Kitchen",
+      "price": 41518,
+      "image": "https://picsum.photos/seed/product8/400/400",
+      "category": "Home & Kitchen",
+      "stock": 4,
+      "brand": "Puma",
+      "rating": 4.1,
+      "reviews": 1678,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "9",
+      "name": "Dell Fashion",
+      "price": 33905,
+      "image": "https://picsum.photos/seed/product9/400/400",
+      "category": "Fashion",
+      "stock": 21,
+      "brand": "Dell",
+      "rating": 3.2,
+      "reviews": 3636,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "10",
+      "name": "HP Sports",
+      "price": 5571,
+      "image": "https://picsum.photos/seed/product10/400/400",
+      "category": "Sports",
+      "stock": 12,
+      "brand": "HP",
+      "rating": 4.7,
+      "reviews": 1675,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "11",
+      "name": "Apple Sports",
+      "price": 56355,
+      "image": "https://picsum.photos/seed/product11/400/400",
+      "category": "Sports",
+      "stock": 52,
+      "brand": "Apple",
+      "rating": 4.1,
+      "reviews": 714,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "12",
+      "name": "Apple Home & Kitchen",
+      "price": 88762,
+      "image": "https://picsum.photos/seed/product12/400/400",
+      "category": "Home & Kitchen",
+      "stock": 27,
+      "brand": "Apple",
+      "rating": 4.5,
+      "reviews": 3940,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "13",
+      "name": "IKEA Sports",
+      "price": 76815,
+      "image": "https://picsum.photos/seed/product13/400/400",
+      "category": "Sports",
+      "stock": 49,
+      "brand": "IKEA",
+      "rating": 3.4,
+      "reviews": 307,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "14",
+      "name": "Samsung Electronics",
+      "price": 4425,
+      "image": "https://picsum.photos/seed/product14/400/400",
+      "category": "Electronics",
+      "stock": 70,
+      "brand": "Samsung",
+      "rating": 4.9,
+      "reviews": 872,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "15",
+      "name": "Adidas Sports",
+      "price": 31266,
+      "image": "https://picsum.photos/seed/product15/400/400",
+      "category": "Sports",
+      "stock": 17,
+      "brand": "Adidas",
+      "rating": 3.2,
+      "reviews": 1412,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "16",
+      "name": "Samsung Books",
+      "price": 23918,
+      "image": "https://picsum.photos/seed/product16/400/400",
+      "category": "Books",
+      "stock": 19,
+      "brand": "Samsung",
+      "rating": 4.4,
+      "reviews": 1028,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "17",
+      "name": "Dell Home & Kitchen",
+      "price": 40277,
+      "image": "https://picsum.photos/seed/product17/400/400",
+      "category": "Home & Kitchen",
+      "stock": 99,
+      "brand": "Dell",
+      "rating": 3.9,
+      "reviews": 711,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "18",
+      "name": "Adidas Electronics",
+      "price": 74160,
+      "image": "https://picsum.photos/seed/product18/400/400",
+      "category": "Electronics",
+      "stock": 12,
+      "brand": "Adidas",
+      "rating": 3.2,
+      "reviews": 2805,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "19",
+      "name": "Samsung Books",
+      "price": 51293,
+      "image": "https://picsum.photos/seed/product19/400/400",
+      "category": "Books",
+      "stock": 37,
+      "brand": "Samsung",
+      "rating": 3.3,
+      "reviews": 4735,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "20",
+      "name": "Nike Fashion",
+      "price": 82706,
+      "image": "https://picsum.photos/seed/product20/400/400",
+      "category": "Fashion",
+      "stock": 86,
+      "brand": "Nike",
+      "rating": 4.5,
+      "reviews": 137,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "21",
+      "name": "Nike Home & Kitchen",
+      "price": 32045,
+      "image": "https://picsum.photos/seed/product21/400/400",
+      "category": "Home & Kitchen",
+      "stock": 29,
+      "brand": "Nike",
+      "rating": 4.7,
+      "reviews": 44,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "22",
+      "name": "IKEA Books",
+      "price": 34086,
+      "image": "https://picsum.photos/seed/product22/400/400",
+      "category": "Books",
+      "stock": 89,
+      "brand": "IKEA",
+      "rating": 4.1,
+      "reviews": 2148,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "23",
+      "name": "LG Books",
+      "price": 37309,
+      "image": "https://picsum.photos/seed/product23/400/400",
+      "category": "Books",
+      "stock": 15,
+      "brand": "LG",
+      "rating": 4.3,
+      "reviews": 4616,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "24",
+      "name": "Apple Sports",
+      "price": 46067,
+      "image": "https://picsum.photos/seed/product24/400/400",
+      "category": "Sports",
+      "stock": 94,
+      "brand": "Apple",
+      "rating": 5,
+      "reviews": 1461,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "25",
+      "name": "Dell Home & Kitchen",
+      "price": 17049,
+      "image": "https://picsum.photos/seed/product25/400/400",
+      "category": "Home & Kitchen",
+      "stock": 71,
+      "brand": "Dell",
+      "rating": 3.4,
+      "reviews": 3512,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "26",
+      "name": "LG Fashion",
+      "price": 3216,
+      "image": "https://picsum.photos/seed/product26/400/400",
+      "category": "Fashion",
+      "stock": 77,
+      "brand": "LG",
+      "rating": 3.7,
+      "reviews": 3710,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "27",
+      "name": "Samsung Fashion",
+      "price": 2912,
+      "image": "https://picsum.photos/seed/product27/400/400",
+      "category": "Fashion",
+      "stock": 65,
+      "brand": "Samsung",
+      "rating": 3.9,
+      "reviews": 4984,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "28",
+      "name": "Apple Fashion",
+      "price": 38211,
+      "image": "https://picsum.photos/seed/product28/400/400",
+      "category": "Fashion",
+      "stock": 72,
+      "brand": "Apple",
+      "rating": 4.3,
+      "reviews": 4768,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "29",
+      "name": "Apple Home & Kitchen",
+      "price": 59346,
+      "image": "https://picsum.photos/seed/product29/400/400",
+      "category": "Home & Kitchen",
+      "stock": 53,
+      "brand": "Apple",
+      "rating": 3.5,
+      "reviews": 3312,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "31",
+      "name": "Puma Electronics",
+      "price": 4732,
+      "image": "https://picsum.photos/seed/product31/400/400",
+      "category": "Electronics",
+      "stock": 57,
+      "brand": "Puma",
+      "rating": 4.2,
+      "reviews": 1933,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "32",
+      "name": "Adidas Home & Kitchen",
+      "price": 40346,
+      "image": "https://picsum.photos/seed/product32/400/400",
+      "category": "Home & Kitchen",
+      "stock": 13,
+      "brand": "Adidas",
+      "rating": 3.2,
+      "reviews": 376,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "33",
+      "name": "Puma Books",
+      "price": 10478,
+      "image": "https://picsum.photos/seed/product33/400/400",
+      "category": "Books",
+      "stock": 7,
+      "brand": "Puma",
+      "rating": 4.9,
+      "reviews": 4149,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "34",
+      "name": "Samsung Sports",
+      "price": 77165,
+      "image": "https://picsum.photos/seed/product34/400/400",
+      "category": "Sports",
+      "stock": 63,
+      "brand": "Samsung",
+      "rating": 4,
+      "reviews": 4626,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "35",
+      "name": "IKEA Books",
+      "price": 54198,
+      "image": "https://picsum.photos/seed/product35/400/400",
+      "category": "Books",
+      "stock": 71,
+      "brand": "IKEA",
+      "rating": 3.2,
+      "reviews": 1321,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "36",
+      "name": "Apple Home & Kitchen",
+      "price": 32423,
+      "image": "https://picsum.photos/seed/product36/400/400",
+      "category": "Home & Kitchen",
+      "stock": 87,
+      "brand": "Apple",
+      "rating": 3.6,
+      "reviews": 4950,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "37",
+      "name": "LG Electronics",
+      "price": 43326,
+      "image": "https://picsum.photos/seed/product37/400/400",
+      "category": "Electronics",
+      "stock": 46,
+      "brand": "LG",
+      "rating": 4.3,
+      "reviews": 243,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "38",
+      "name": "Adidas Electronics",
+      "price": 45709,
+      "image": "https://picsum.photos/seed/product38/400/400",
+      "category": "Electronics",
+      "stock": 70,
+      "brand": "Adidas",
+      "rating": 4,
+      "reviews": 3931,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "39",
+      "name": "Puma Sports",
+      "price": 14337,
+      "image": "https://picsum.photos/seed/product39/400/400",
+      "category": "Sports",
+      "stock": 59,
+      "brand": "Puma",
+      "rating": 4.3,
+      "reviews": 1183,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "40",
+      "name": "Nike Books",
+      "price": 81592,
+      "image": "https://picsum.photos/seed/product40/400/400",
+      "category": "Books",
+      "stock": 81,
+      "brand": "Nike",
+      "rating": 4,
+      "reviews": 108,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "41",
+      "name": "Nike Books",
+      "price": 77096,
+      "image": "https://picsum.photos/seed/product41/400/400",
+      "category": "Books",
+      "stock": 61,
+      "brand": "Nike",
+      "rating": 3.2,
+      "reviews": 2483,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "42",
+      "name": "Adidas Books",
+      "price": 89780,
+      "image": "https://picsum.photos/seed/product42/400/400",
+      "category": "Books",
+      "stock": 75,
+      "brand": "Adidas",
+      "rating": 4.6,
+      "reviews": 2102,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "43",
+      "name": "Adidas Home & Kitchen",
+      "price": 22008,
+      "image": "https://picsum.photos/seed/product43/400/400",
+      "category": "Home & Kitchen",
+      "stock": 7,
+      "brand": "Adidas",
+      "rating": 4.6,
+      "reviews": 4365,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "44",
+      "name": "Dell Fashion",
+      "price": 28691,
+      "image": "https://picsum.photos/seed/product44/400/400",
+      "category": "Fashion",
+      "stock": 29,
+      "brand": "Dell",
+      "rating": 4.6,
+      "reviews": 4964,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "45",
+      "name": "Sony Sports",
+      "price": 37148,
+      "image": "https://picsum.photos/seed/product45/400/400",
+      "category": "Sports",
+      "stock": 22,
+      "brand": "Sony",
+      "rating": 4.6,
+      "reviews": 4139,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "46",
+      "name": "Adidas Fashion",
+      "price": 14163,
+      "image": "https://picsum.photos/seed/product46/400/400",
+      "category": "Fashion",
+      "stock": 54,
+      "brand": "Adidas",
+      "rating": 3.5,
+      "reviews": 2956,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "47",
+      "name": "HP Home & Kitchen",
+      "price": 53609,
+      "image": "https://picsum.photos/seed/product47/400/400",
+      "category": "Home & Kitchen",
+      "stock": 17,
+      "brand": "HP",
+      "rating": 3.8,
+      "reviews": 3679,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "48",
+      "name": "Sony Home & Kitchen",
+      "price": 49442,
+      "image": "https://picsum.photos/seed/product48/400/400",
+      "category": "Home & Kitchen",
+      "stock": 64,
+      "brand": "Sony",
+      "rating": 3.5,
+      "reviews": 962,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "49",
+      "name": "Puma Sports",
+      "price": 5531,
+      "image": "https://picsum.photos/seed/product49/400/400",
+      "category": "Sports",
+      "stock": 43,
+      "brand": "Puma",
+      "rating": 4.9,
+      "reviews": 253,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "50",
+      "name": "Puma Home & Kitchen",
+      "price": 15383,
+      "image": "https://picsum.photos/seed/product50/400/400",
+      "category": "Home & Kitchen",
+      "stock": 77,
+      "brand": "Puma",
+      "rating": 3.5,
+      "reviews": 2492,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "51",
+      "name": "Puma Home & Kitchen",
+      "price": 35377,
+      "image": "https://picsum.photos/seed/product51/400/400",
+      "category": "Home & Kitchen",
+      "stock": 87,
+      "brand": "Puma",
+      "rating": 3.4,
+      "reviews": 4862,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "52",
+      "name": "Nike Electronics",
+      "price": 59318,
+      "image": "https://picsum.photos/seed/product52/400/400",
+      "category": "Electronics",
+      "stock": 100,
+      "brand": "Nike",
+      "rating": 4.9,
+      "reviews": 4502,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "53",
+      "name": "Sony Sports",
+      "price": 34337,
+      "image": "https://picsum.photos/seed/product53/400/400",
+      "category": "Sports",
+      "stock": 91,
+      "brand": "Sony",
+      "rating": 4.5,
+      "reviews": 4779,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "54",
+      "name": "Nike Books",
+      "price": 42937,
+      "image": "https://picsum.photos/seed/product54/400/400",
+      "category": "Books",
+      "stock": 1,
+      "brand": "Nike",
+      "rating": 3.5,
+      "reviews": 4407,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "55",
+      "name": "IKEA Electronics",
+      "price": 83943,
+      "image": "https://picsum.photos/seed/product55/400/400",
+      "category": "Electronics",
+      "stock": 25,
+      "brand": "IKEA",
+      "rating": 4.5,
+      "reviews": 1611,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "56",
+      "name": "LG Electronics",
+      "price": 82266,
+      "image": "https://picsum.photos/seed/product56/400/400",
+      "category": "Electronics",
+      "stock": 91,
+      "brand": "LG",
+      "rating": 3.8,
+      "reviews": 2263,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "57",
+      "name": "Puma Electronics",
+      "price": 19399,
+      "image": "https://picsum.photos/seed/product57/400/400",
+      "category": "Electronics",
+      "stock": 1,
+      "brand": "Puma",
+      "rating": 5,
+      "reviews": 2248,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "58",
+      "name": "Sony Home & Kitchen",
+      "price": 35532,
+      "image": "https://picsum.photos/seed/product58/400/400",
+      "category": "Home & Kitchen",
+      "stock": 97,
+      "brand": "Sony",
+      "rating": 3.8,
+      "reviews": 337,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "59",
+      "name": "Dell Books",
+      "price": 15873,
+      "image": "https://picsum.photos/seed/product59/400/400",
+      "category": "Books",
+      "stock": 9,
+      "brand": "Dell",
+      "rating": 3,
+      "reviews": 2789,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "60",
+      "name": "Adidas Electronics",
+      "price": 42365,
+      "image": "https://picsum.photos/seed/product60/400/400",
+      "category": "Electronics",
+      "stock": 65,
+      "brand": "Adidas",
+      "rating": 3.6,
+      "reviews": 741,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "61",
+      "name": "Adidas Electronics",
+      "price": 18641,
+      "image": "https://picsum.photos/seed/product61/400/400",
+      "category": "Electronics",
+      "stock": 50,
+      "brand": "Adidas",
+      "rating": 3.4,
+      "reviews": 1106,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "62",
+      "name": "Nike Home & Kitchen",
+      "price": 17634,
+      "image": "https://picsum.photos/seed/product62/400/400",
+      "category": "Home & Kitchen",
+      "stock": 46,
+      "brand": "Nike",
+      "rating": 4,
+      "reviews": 3825,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "63",
+      "name": "IKEA Books",
+      "price": 28655,
+      "image": "https://picsum.photos/seed/product63/400/400",
+      "category": "Books",
+      "stock": 48,
+      "brand": "IKEA",
+      "rating": 3.9,
+      "reviews": 2861,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "64",
+      "name": "Apple Fashion",
+      "price": 25348,
+      "image": "https://picsum.photos/seed/product64/400/400",
+      "category": "Fashion",
+      "stock": 98,
+      "brand": "Apple",
+      "rating": 4,
+      "reviews": 1201,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "65",
+      "name": "Apple Books",
+      "price": 37057,
+      "image": "https://picsum.photos/seed/product65/400/400",
+      "category": "Books",
+      "stock": 23,
+      "brand": "Apple",
+      "rating": 4.2,
+      "reviews": 1584,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "66",
+      "name": "HP Home & Kitchen",
+      "price": 52805,
+      "image": "https://picsum.photos/seed/product66/400/400",
+      "category": "Home & Kitchen",
+      "stock": 73,
+      "brand": "HP",
+      "rating": 3.9,
+      "reviews": 1413,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "67",
+      "name": "Nike Home & Kitchen",
+      "price": 84462,
+      "image": "https://picsum.photos/seed/product67/400/400",
+      "category": "Home & Kitchen",
+      "stock": 100,
+      "brand": "Nike",
+      "rating": 4.8,
+      "reviews": 2481,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "68",
+      "name": "Sony Sports",
+      "price": 21121,
+      "image": "https://picsum.photos/seed/product68/400/400",
+      "category": "Sports",
+      "stock": 35,
+      "brand": "Sony",
+      "rating": 3.1,
+      "reviews": 514,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "69",
+      "name": "Puma Fashion",
+      "price": 56360,
+      "image": "https://picsum.photos/seed/product69/400/400",
+      "category": "Fashion",
+      "stock": 54,
+      "brand": "Puma",
+      "rating": 4.5,
+      "reviews": 3954,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "70",
+      "name": "Puma Sports",
+      "price": 25565,
+      "image": "https://picsum.photos/seed/product70/400/400",
+      "category": "Sports",
+      "stock": 98,
+      "brand": "Puma",
+      "rating": 4.2,
+      "reviews": 3131,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "71",
+      "name": "Nike Home & Kitchen",
+      "price": 63023,
+      "image": "https://picsum.photos/seed/product71/400/400",
+      "category": "Home & Kitchen",
+      "stock": 9,
+      "brand": "Nike",
+      "rating": 4.4,
+      "reviews": 1177,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "72",
+      "name": "Puma Fashion",
+      "price": 12097,
+      "image": "https://picsum.photos/seed/product72/400/400",
+      "category": "Fashion",
+      "stock": 100,
+      "brand": "Puma",
+      "rating": 3.2,
+      "reviews": 2436,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Puma. It is designed for quality and reliability."
+    },
+    {
+      "id": "73",
+      "name": "Samsung Books",
+      "price": 9068,
+      "image": "https://picsum.photos/seed/product73/400/400",
+      "category": "Books",
+      "stock": 74,
+      "brand": "Samsung",
+      "rating": 3.5,
+      "reviews": 2023,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "74",
+      "name": "Adidas Home & Kitchen",
+      "price": 13479,
+      "image": "https://picsum.photos/seed/product74/400/400",
+      "category": "Home & Kitchen",
+      "stock": 30,
+      "brand": "Adidas",
+      "rating": 4.5,
+      "reviews": 2962,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "75",
+      "name": "HP Home & Kitchen",
+      "price": 64319,
+      "image": "https://picsum.photos/seed/product75/400/400",
+      "category": "Home & Kitchen",
+      "stock": 87,
+      "brand": "HP",
+      "rating": 3.4,
+      "reviews": 2197,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "76",
+      "name": "Samsung Sports",
+      "price": 84762,
+      "image": "https://picsum.photos/seed/product76/400/400",
+      "category": "Sports",
+      "stock": 3,
+      "brand": "Samsung",
+      "rating": 4.2,
+      "reviews": 1515,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "77",
+      "name": "Sony Fashion",
+      "price": 42525,
+      "image": "https://picsum.photos/seed/product77/400/400",
+      "category": "Fashion",
+      "stock": 82,
+      "brand": "Sony",
+      "rating": 3,
+      "reviews": 1707,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "78",
+      "name": "Adidas Fashion",
+      "price": 32588,
+      "image": "https://picsum.photos/seed/product78/400/400",
+      "category": "Fashion",
+      "stock": 19,
+      "brand": "Adidas",
+      "rating": 3.2,
+      "reviews": 3432,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "79",
+      "name": "Adidas Sports",
+      "price": 12599,
+      "image": "https://picsum.photos/seed/product79/400/400",
+      "category": "Sports",
+      "stock": 78,
+      "brand": "Adidas",
+      "rating": 3,
+      "reviews": 2951,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "80",
+      "name": "Nike Books",
+      "price": 40587,
+      "image": "https://picsum.photos/seed/product80/400/400",
+      "category": "Books",
+      "stock": 49,
+      "brand": "Nike",
+      "rating": 4.9,
+      "reviews": 1980,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "81",
+      "name": "LG Sports",
+      "price": 48777,
+      "image": "https://picsum.photos/seed/product81/400/400",
+      "category": "Sports",
+      "stock": 61,
+      "brand": "LG",
+      "rating": 4.1,
+      "reviews": 4093,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "82",
+      "name": "LG Fashion",
+      "price": 35689,
+      "image": "https://picsum.photos/seed/product82/400/400",
+      "category": "Fashion",
+      "stock": 15,
+      "brand": "LG",
+      "rating": 4.5,
+      "reviews": 3465,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "83",
+      "name": "Dell Electronics",
+      "price": 83513,
+      "image": "https://picsum.photos/seed/product83/400/400",
+      "category": "Electronics",
+      "stock": 85,
+      "brand": "Dell",
+      "rating": 4,
+      "reviews": 1307,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "84",
+      "name": "IKEA Electronics",
+      "price": 15471,
+      "image": "https://picsum.photos/seed/product84/400/400",
+      "category": "Electronics",
+      "stock": 94,
+      "brand": "IKEA",
+      "rating": 5,
+      "reviews": 4643,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from IKEA. It is designed for quality and reliability."
+    },
+    {
+      "id": "85",
+      "name": "HP Home & Kitchen",
+      "price": 11794,
+      "image": "https://picsum.photos/seed/product85/400/400",
+      "category": "Home & Kitchen",
+      "stock": 45,
+      "brand": "HP",
+      "rating": 4.9,
+      "reviews": 703,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "86",
+      "name": "Dell Fashion",
+      "price": 17451,
+      "image": "https://picsum.photos/seed/product86/400/400",
+      "category": "Fashion",
+      "stock": 17,
+      "brand": "Dell",
+      "rating": 4.3,
+      "reviews": 2105,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "87",
+      "name": "Apple Home & Kitchen",
+      "price": 58347,
+      "image": "https://picsum.photos/seed/product87/400/400",
+      "category": "Home & Kitchen",
+      "stock": 26,
+      "brand": "Apple",
+      "rating": 3.9,
+      "reviews": 3446,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Apple. It is designed for quality and reliability."
+    },
+    {
+      "id": "88",
+      "name": "Nike Electronics",
+      "price": 9929,
+      "image": "https://picsum.photos/seed/product88/400/400",
+      "category": "Electronics",
+      "stock": 48,
+      "brand": "Nike",
+      "rating": 4.8,
+      "reviews": 1277,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Nike. It is designed for quality and reliability."
+    },
+    {
+      "id": "89",
+      "name": "Samsung Books",
+      "price": 72222,
+      "image": "https://picsum.photos/seed/product89/400/400",
+      "category": "Books",
+      "stock": 75,
+      "brand": "Samsung",
+      "rating": 4.1,
+      "reviews": 4140,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "90",
+      "name": "Adidas Fashion",
+      "price": 64877,
+      "image": "https://picsum.photos/seed/product90/400/400",
+      "category": "Fashion",
+      "stock": 90,
+      "brand": "Adidas",
+      "rating": 4.7,
+      "reviews": 152,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "91",
+      "name": "HP Sports",
+      "price": 34402,
+      "image": "https://picsum.photos/seed/product91/400/400",
+      "category": "Sports",
+      "stock": 56,
+      "brand": "HP",
+      "rating": 4.4,
+      "reviews": 1781,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "92",
+      "name": "HP Sports",
+      "price": 11163,
+      "image": "https://picsum.photos/seed/product92/400/400",
+      "category": "Sports",
+      "stock": 2,
+      "brand": "HP",
+      "rating": 3.6,
+      "reviews": 2883,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from HP. It is designed for quality and reliability."
+    },
+    {
+      "id": "93",
+      "name": "LG Books",
+      "price": 20130,
+      "image": "https://picsum.photos/seed/product93/400/400",
+      "category": "Books",
+      "stock": 93,
+      "brand": "LG",
+      "rating": 5,
+      "reviews": 2696,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a books product from LG. It is designed for quality and reliability."
+    },
+    {
+      "id": "94",
+      "name": "Dell Electronics",
+      "price": 54565,
+      "image": "https://picsum.photos/seed/product94/400/400",
+      "category": "Electronics",
+      "stock": 55,
+      "brand": "Dell",
+      "rating": 4.7,
+      "reviews": 3857,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a electronics product from Dell. It is designed for quality and reliability."
+    },
+    {
+      "id": "95",
+      "name": "Adidas Sports",
+      "price": 27015,
+      "image": "https://picsum.photos/seed/product95/400/400",
+      "category": "Sports",
+      "stock": 66,
+      "brand": "Adidas",
+      "rating": 3.7,
+      "reviews": 4476,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "96",
+      "name": "Sony Fashion",
+      "price": 81014,
+      "image": "https://picsum.photos/seed/product96/400/400",
+      "category": "Fashion",
+      "stock": 40,
+      "brand": "Sony",
+      "rating": 3.6,
+      "reviews": 904,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "97",
+      "name": "Adidas Home & Kitchen",
+      "price": 87847,
+      "image": "https://picsum.photos/seed/product97/400/400",
+      "category": "Home & Kitchen",
+      "stock": 58,
+      "brand": "Adidas",
+      "rating": 3.3,
+      "reviews": 2436,
+      "warranty": "No Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a home & kitchen product from Adidas. It is designed for quality and reliability."
+    },
+    {
+      "id": "98",
+      "name": "Sony Sports",
+      "price": 7459,
+      "image": "https://picsum.photos/seed/product98/400/400",
+      "category": "Sports",
+      "stock": 16,
+      "brand": "Sony",
+      "rating": 4.2,
+      "reviews": 2342,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Sony. It is designed for quality and reliability."
+    },
+    {
+      "id": "99",
+      "name": "Samsung Fashion",
+      "price": 30618,
+      "image": "https://picsum.photos/seed/product99/400/400",
+      "category": "Fashion",
+      "stock": 79,
+      "brand": "Samsung",
+      "rating": 4.4,
+      "reviews": 2341,
+      "warranty": "1 Year Manufacturer Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a fashion product from Samsung. It is designed for quality and reliability."
+    },
+    {
+      "id": "101",
+      "name": "Adidas Premium Samba Shoes",
+      "price": 10999,
+      "image": "https://extrabutterny.in/cdn/shop/files/IG1024-1.jpg?v=1699649962",
+      "category": "Sports",
+      "stock": 41,
+      "brand": "Adidas",
+      "rating": 4.8,
+      "reviews": 1739,
+      "warranty": "1 month Warranty",
+      "features": [
+        "High quality material",
+        "Latest design",
+        "Durable and long-lasting",
+        "Best value for money"
+      ],
+      "description": "This is a sports product from Adidas. It is designed for quality and reliability and original premium shoes of Adidas."
+    },
+    {
+      "id": "753829",
+      "name": "Iphone 17 Air",
+      "price": "119900",
+      "image": "https://hellomobiles.in/wp-content/uploads/2025/09/17-air_iphone-4.webp",
+      "category": "Electronics",
+      "stock": "12",
+      "brand": "Apple",
+      "rating": "5",
+      "reviews": "500",
+      "warranty": "1 year",
+      "features": "256 GB ROM,\n16.51 cm (6.5 inch) Super Retina XDR Display,\n48MP + 48MP | 18MP Front Camera,\nA19 Chip, 6 Core Processor Processor",
+      "description": "The iPhone 17 Air is an ultra-thin and light iPhone model featuring a 6.5-inch ProMotion display, the A19 Pro chip, a titanium body, and a single 48MP rear camera. "
+    }
+  ],
+  "cart": [
+    {
+      "id": "1759469112120",
+      "productId": "3",
+      "name": "HP Sports",
+      "price": 80408,
+      "image": "https://picsum.photos/seed/product3/400/400",
+      "quantity": 1
+    },
+    {
+      "id": "1759469404728",
+      "productId": "6",
+      "name": "Dell Sports",
+      "price": 26607,
+      "image": "https://picsum.photos/seed/product6/400/400",
+      "quantity": 1
+    }
+  ]
+}

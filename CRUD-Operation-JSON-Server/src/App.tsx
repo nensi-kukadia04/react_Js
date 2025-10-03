@@ -1,5 +1,4 @@
 import Navbar from "./Components/NavBar";
-// import SideBarPage from "./Pages/SideBar/SideBarPage";
 import Footer from "./Components/Footer";
 import { Outlet } from "react-router";
 
@@ -9,8 +8,6 @@ export default function App() {
       <Navbar />
       
       <div className="flex flex-1 mt-2">
-        {/* Sidebar */}
-        {/* <SideBarPage /> */}
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
           <Outlet/>
