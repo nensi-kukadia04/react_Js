@@ -2,23 +2,17 @@
 
 GoCart is a modern e-commerce web application built with **React**, **Tailwind CSS**, and **React Router**. Users can browse products, filter, search, sort, add to cart, and place orders seamlessly.
 
-<div>
-  <div>
-    ![GoCart Logo](public/home.png)
-    ![GoCart Logo](public/addProduct.png)
-  </div>
-  <div>
-    ![GoCart Logo](public/deleteProduct.png)
-    ![GoCart Logo](public/detailPage.png)
-  </div>
-  <div>
-    ![GoCart Logo](public/order.png)
-    ![GoCart Logo](public/orderPlaced.png)
-  </div>
-  <div>
-    ![GoCart Logo](public/sorting.png)
-    ![GoCart Logo](public/filter.png)
-  </div>
+## 📷 Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="public/home.png" alt="Home Page" width="48%" />
+  <img src="public/addProduct.png" alt="Add Product" width="48%" />
+  <img src="public/deleteProduct.png" alt="Delete Product" width="48%" />
+  <img src="public/detailPage.png" alt="Detail Page" width="48%" />
+  <img src="public/order.png" alt="Order Page" width="48%" />
+  <img src="public/orderPlaced.png" alt="Order Placed" width="48%" />
+  <img src="public/sorting.png" alt="Sorting" width="48%" />
+  <img src="public/filter.png" alt="Filter" width="48%" />
 </div>
 
 ---
@@ -120,5 +114,5 @@ npm start
 ## 📄 License
 This project is licensed under the MIT License.
 
-## Author By 
- ~ Nensi Kukadia
+Author
+~ Nensi Kukadia
