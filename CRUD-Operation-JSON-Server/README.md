@@ -146,16 +146,16 @@ npm start
 
 ## 🖼 Screenshots
 
-- **Home Page**: ![HomePage](/homePage.png)
-- **Home Page**: ![HomePage](/homePage2.png)
-- **Product Details**: ![ProductDetails](/detailPage.png)
-- **View Admin Product**: ![AdminView](/viewProduct.png)
-- **Cart Page**: ![CartPage](/addTocart.png)
-- **edit Page**: ![AdminView](/editProduct.png)
-- **Add product Page**: ![AdminView](/addProduct.png)
-- **Order Placed Page**: ![orderPlaced](/orderPlaced.png)
-- **delete Page**: ![AdminView](/deleteProduct.png)
-- **Contact Page**: ![Contactpage](/ContactPage.png)
+- **Home Page**: ![HomePage](public/homePage.png)
+- **Home Page**: ![HomePage](public/homePage2.png)
+- **Product Details**: ![ProductDetails](public/detailPage.png)
+- **View Admin Product**: ![AdminView](public/viewProduct.png)
+- **Cart Page**: ![CartPage](public/addTocart.png)
+- **edit Page**: ![AdminView](public/editProduct.png)
+- **Add product Page**: ![AdminView](public/addProduct.png)
+- **Order Placed Page**: ![orderPlaced](public/orderPlaced.png)
+- **delete Page**: ![AdminView](public/deleteProduct.png)
+- **Contact Page**: ![Contactpage](public/ContactPage.png)
 
 ---
 
