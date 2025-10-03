@@ -29,7 +29,7 @@ function ContactPage(){
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Email Address</h3>
-                  <p className="text-gray-600">support@startup.com</p>
+                  <p className="text-gray-600">kukadiyanensi41@gmail.com</p>
                 </div>
               </div>
               
@@ -49,7 +49,8 @@ function ContactPage(){
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Phone Number</h3>
-                  <p className="text-gray-600">+009 8754 3433 223</p>
+                  <p className="text-gray-600">+91 75674 65432
+                  </p>
                 </div>
               </div>
               
@@ -59,7 +60,7 @@ function ContactPage(){
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Skype Email</h3>
-                  <p className="text-gray-600">example@yourmail.com</p>
+                  <p className="text-gray-600">kukadiyanensi41@gmail.com</p>
                 </div>
               </div>
               

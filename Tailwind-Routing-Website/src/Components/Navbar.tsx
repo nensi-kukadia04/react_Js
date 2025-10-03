@@ -1,5 +1,5 @@
 import { NavLink } from "react-router"; 
-import { Zap, ChevronDown, Menu, X } from "lucide-react";
+import { Zap, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 function Navbar() {
@@ -44,25 +44,31 @@ function Navbar() {
               Portfolio
             </NavLink>
 
-            {/* Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 font-medium transition-colors">
-                <span>Pages</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50 
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <NavLink to="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</NavLink>
-                <NavLink to="/features" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Features</NavLink>
-                <NavLink to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</NavLink>
-                <NavLink to="/service" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Service</NavLink>
-                <NavLink to="/pricing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pricing</NavLink>
-                <NavLink to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Team</NavLink>
-                <NavLink to="/testimonials" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Testimonials</NavLink>
-                <NavLink to="/stats" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Stats</NavLink>
-                <NavLink to="/whyChooseUs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Why Choose Us</NavLink>
-              </div>
-            </div>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-blue-600"
+                    : "text-gray-600 hover:text-blue-600"
+                }`
+              }
+            >
+              Blog
+            </NavLink>
+
+            <NavLink
+              to="/team"
+              className={({ isActive }) =>
+                `font-medium transition-colors ${
+                  isActive
+                    ? "text-blue-600"
+                    : "text-gray-600 hover:text-blue-600"
+                }`
+              }
+            >
+              Team
+            </NavLink>
 
             <NavLink
               to="/contact"

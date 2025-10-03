@@ -1,8 +1,24 @@
-import { useState } from "react";
+import { EyeIcon, PlusIcon } from "lucide-react";
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
+import { productAPIServices } from "../Service/ProductAPIService";
 
 export default function Navbar() {
 
-     const [isMoreOpen, setIsMoreOpen] = useState(false);
+    const [cartCount, setCartCount] = useState(0);
+
+    useEffect(() => {
+        const fetchCartCount = async () => {
+            const cartItems = await productAPIServices.fetchCart();
+            setCartCount(cartItems.length);
+        };
+
+        fetchCartCount();
+
+        const interval = setInterval(fetchCartCount, 3000);
+        return () => clearInterval(interval);
+        
+    }, [cartCount]);
 
     return (
         <div className="w-full">
@@ -25,7 +41,7 @@ export default function Navbar() {
                         <div className="flex items-center space-x-8">
                             <div className="flex items-center group cursor-pointer">
                                 <div className="relative">
-                                    <div className="text-white font-bold text-2xl italic tracking-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                                    <div className="text-white font-bold text-2xl italic tracking-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text">
                                         GoCart
                                     </div>
                                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-yellow-400 to-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
@@ -64,80 +80,43 @@ export default function Navbar() {
                         {/* Right Section */}
                         <div className="flex items-center space-x-4">
                             {/* Login Button */}
-                            <button className="text-white hover:bg-white/20 p-2 rounded-full">
-                                <svg
-                                    className="w-6 h-6"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                                    />
-                                </svg>
-                            </button>
-
-                            {/* More Dropdown */}
-                            <div className="relative">
-                                <button
-                                    onClick={() => setIsMoreOpen(!isMoreOpen)}
+                            <div>
+                                <NavLink to={"/add-product"}
                                     className="flex items-center text-white shadow-xl font-semibold hover:bg-white/10 px-4 py-2 rounded-lg transition-all duration-200"
                                 >
-                                    More
-                                    <svg
-                                        className={`w-4 h-4 ml-2 transform transition-transform ${isMoreOpen ? "rotate-180" : "rotate-0"
-                                            }`}
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2.5"
-                                            d="M19 9l-7 7-7-7"
-                                        />
-                                    </svg>
-                                </button>
+                                    <PlusIcon size={16} className="text-white mr-2" /> Product
+                                </NavLink>
+                            </div>
 
-                                {isMoreOpen && (
-                                    <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 z-50">
-                                        <a
-                                            href="/add-product"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-blue-50"
-                                        >
-                                            ➕ Add Product
-                                        </a>
-                                        <a
-                                            href="/view-product"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-blue-50"
-                                        >
-                                            📦 View Product
-                                        </a>
-                                    </div>
-                                )}
+                            <div>
+                                <NavLink to={"/view-product"}
+                                    className="flex items-center text-white shadow-xl font-semibold hover:bg-white/10 px-4 py-2 rounded-lg transition-all duration-200"
+                                >
+                                    <EyeIcon size={16} className="mr-2" /> Product
+                                </NavLink>
                             </div>
 
                             {/* Cart */}
-                            <button className="group relative flex items-center text-white font-semibold hover:bg-white/10 px-4 py-2.5 rounded-lg transition-all duration-200 border border-transparent hover:border-white/20">
+                            <NavLink to={"/addToCart"} className="group relative flex items-center text-white font-semibold hover:bg-white/10 px-4 py-2.5 rounded-lg transition-all duration-200 border border-transparent hover:border-white/20">
                                 <div className="relative">
                                     <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293a1 1 0 00-.293.707V17h1M13 17a2 2 0 100 4 2 2 0 000-4zm-6 0a2 2 0 100 4 2 2 0 000-4z"></path>
                                     </svg>
-                                    <span className="absolute -top-2 -right-1 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold shadow-lg">3</span>
+                                    {cartCount > 0 && (
+                                        <span className="absolute -top-2 -right-1 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold shadow-lg">
+                                            {cartCount}
+                                        </span>
+                                    )}
                                 </div>
                                 Cart
-                            </button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
             </nav>
 
             {/* Enhanced Secondary Navigation */}
-            <div className="bg-white shadow-lg border-b-2 border-gray-100 sticky top-0 z-40">
+            <div className="bg-white drop-shadow-sm border-b-2 border-gray-100 sticky top-0 z-40">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center justify-between px-4 py-2">
                         {/* Main Categories */}

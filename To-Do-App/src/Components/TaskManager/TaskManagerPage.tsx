@@ -59,7 +59,7 @@ function TaskManagerPage({ theme, setTheme }: Props) {
             const data = displayTask.map((task, index) =>
                 editId === index ? newTask : task
             );
-            toast.warn("Task updated successfully!");
+            toast.success("Task updated successfully!");
             setDisplayTask(data);
         }
 
@@ -71,7 +71,7 @@ function TaskManagerPage({ theme, setTheme }: Props) {
     const deleteTasks = (i: number) => {
         const data = displayTask.filter((_, index) => i !== index);
         setDisplayTask(data);
-        toast.error("Task deleted successfully!");
+        toast.success("Task deleted successfully!");
     };
 
     const editTask = (i: number) => {

@@ -1,20 +1,26 @@
 import { useState } from "react";
 import { productAPIServices } from "../../Service/ProductAPIService";
+import { useLoaderData, useNavigate } from "react-router";
+import { toast, ToastContainer } from "react-toastify";
 
-export default function AddProductForm() {
+export default function EditProductPage() {
+
+  const productData = useLoaderData();
+  const navigator = useNavigate();
+
   const [addProductData, setAddProductData] = useState({
-    id: Math.floor(Math.random() * 1000000).toString(),
-    name: "",
-    price: "",
-    image: "",
-    category: "",
-    stock: "",
-    brand: "",
-    rating: "",
-    reviews: "",
-    warranty: "",
-    features: "",
-    description: "",
+    id: productData.id,
+    name: productData.name,
+    price: productData.price,
+    image: productData.image,
+    category: productData.category,
+    stock: productData.stock,
+    brand: productData.brand,
+    rating: productData.rating,
+    reviews: productData.reviews,
+    warranty: productData.warranty,
+    features: productData.features,
+    description: productData.description,
   });
 
   const handleChange = (event: any) => {
@@ -25,39 +31,21 @@ export default function AddProductForm() {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    // console.log(addProductData);
-    const status = await productAPIServices.addNewProduct(addProductData);
-
-    if (status) {
-      console.log("Add product Successful");
-
-      setAddProductData({
-        id: Math.floor(Math.random() * 1000000).toString(),
-        name: "",
-        price: "",
-        image: "",
-        category: "",
-        stock: "",
-        brand: "",
-        rating: "",
-        reviews: "",
-        warranty: "",
-        features: "",
-        description: "",
-      })
+    if (await productAPIServices.updateProduct(addProductData.id, addProductData)) {
+      navigator("/view-product");
+      toast.success("Product updated successfully");
     }
     else {
-      console.log("Failed to add product")
+      toast.error("Failed to update product");
     }
-
   }
 
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-          Add New Product
+          Edit Product
         </h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           {/* Product Name */}
@@ -216,10 +204,11 @@ export default function AddProductForm() {
             type="submit"
             className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-200"
           >
-            Add Product
+            Update Product
           </button>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 }
